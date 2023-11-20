@@ -202,3 +202,20 @@ SELECT firstname, lastname FROM Participant WHERE id = 4;
 
 SELECT * FROM participant;
 SELECT * FROM participant ORDER BY firstname;
+
+SELECT firstname, lastname FROM participant WHERE id = 15;
+Select * FROM event WHERE idplace= 20 AND id = 3;
+Select * FROM event WHERE idplace= 20 OR idplace = 14;
+
+SELECT firstname AS 'prenom' , lastname AS 'nom' FROM participant;
+
+SELECT COUNT (firstname) AS 'Nombre de participants' FROM participant;
+
+SELECT field 
+FROM sponsor 
+ORDER BY name DESC;
+
+SELECT firstname, lastname, cin FROM participant WHERE cin LIKE '_T%2';
+SELECT firstname, lastname FROM participant WHERE id BETWEEN 1 AND 5;
+
+SELECT * FROM event ;
